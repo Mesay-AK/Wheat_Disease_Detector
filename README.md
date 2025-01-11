@@ -1,9 +1,8 @@
-# Wheat disease detection
- 
-This is a Python script that implements a Convolutional Neural Network (CNN) model for detecting wheat diseases. It begins by importing necessary libraries and setting the paths for the dataset and images to be classified, which belong to 4 categories; healthy, leaf rust, crown and root rot, and loose smut. The dataset is loaded and preprocessed, converting the images into numpy arrays and normalizing their values. The data is then split into training and testing sets.
+# Wheat-Disease-Recognition
 
-The CNN model is created using the Sequential model from Keras. It consists of multiple convolutional and max-pooling layers to extract features from the input images, followed by dense layers for classification. The model is compiled with appropriate settings such as optimizer, loss function, and accuracy metric. Data augmentation is applied to the training images using the ImageDataGenerator class from Keras, which introduces random transformations to increase the diversity of the data. The model is trained using the augmented data and the fit() function. After training, the model's performance is evaluated using the testing set. The accuracy and loss values are displayed.
+WheatGuard is a mobile application that helps farmers, agricultural practitioners and alike to detect wheat crop diseases. Our project uses a Convulational Neural Networks(CNN) to detect if a wheat crop is healthy or not. By using the model, the application tries to classify a crop image from the application into four major classes ('Leaf rust', 'Crown root rot', 'Loose smut', 'healthy'). If the image is not classified as one of these classes, it is identified as 'Unknown class'. We used DDD-like architecture to structure our code.
 
-The model is then used to classify new images by preprocessing them and predicting their labels. The predicted labels, along with the corresponding image names, are printed.
-
-Finally, the trained model is saved in the H5 format for future use.
+Packages Used for the Application
+1. Flutter BLoC - For state management
+2. GoRouter - For Navigation
+3. TFLite - For model integration
